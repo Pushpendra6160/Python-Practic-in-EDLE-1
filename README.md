@@ -222,3 +222,103 @@ NameError: name 'Touple' is not defined. Did you mean: 'tuple'?
 >>> #Touple in Python
 >>>
 >>>
+>>> tup = (21,36,14,25)
+>>> tup [1]
+36
+>>> tup []1 = 33
+  File "<stdin>", line 1
+    tup []1 = 33
+         ^
+SyntaxError: invalid syntax
+>>> tup[1] = 33
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> # in tuple we can not change the value
+>>> # use : when you have a list and you dont want anyone change it's value you can use tuple, since there is no changes it's ittration will we fast
+>>>
+>>>
+>>> Set in Python
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Set' is not defined. Did you mean: 'set'?
+>>> #set in Python
+>>>
+>>> s = {22,25,14,21,5}
+>>> s
+{5, 21, 22, 25, 14}
+>>> #set is not followin the secuance
+>>> s[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+>>> # indexing is not sopperted in set
+>>>
+>>> #Dictionary in python
+>>> data = {1:'pushp', 2 : 'Harsh', 3: 'Kiran'}
+>>> data[2]
+'Harsh'
+>>> data[1]
+'pushp'
+>>> data.get(1)
+'pushp'
+>>> data.get(3,'Not Found')
+'Kiran'
+>>> keys =['Navin', 'Kiran', 'Harsh']
+>>> valuses = ['python','java', 'js']
+>>> data = dict(zip(keys,values))
+>>> data
+{'Navin': 9.5, 'Kiran': 'navin', 'Harsh': 25}
+>>> keys =['Navin', 'Kiran', 'Harsh']
+>>>  valuses = ['python','java', 'js']
+  File "<stdin>", line 1
+    valuses = ['python','java', 'js']
+IndentationError: unexpected indent
+>>> keys =['Navin', 'Kiran', 'Harsh']
+>>> valuses = ['python','java', 'js']
+>>> nide = dict(zip(keys,values))
+>>> nide
+{'Navin': 9.5, 'Kiran': 'navin', 'Harsh': 25}
+>>> nide['Monika'] = 'cs'
+>>> nide
+{'Navin': 9.5, 'Kiran': 'navin', 'Harsh': 25, 'Monika': 'cs'}
+>>> del nide['Harsh']
+>>> nide
+{'Navin': 9.5, 'Kiran': 'navin', 'Monika': 'cs'}
+>>> keys =['Navin', 'Kiran', 'Harsh']
+>>> values = ['python','java', 'js']
+>>> nide = dict(zip(keys,values))
+>>> nide
+{'Navin': 'python', 'Kiran': 'java', 'Harsh': 'js'}
+>>> nide['Kanika'] = 'cs'
+>>> nide
+{'Navin': 'python', 'Kiran': 'java', 'Harsh': 'js', 'Kanika': 'cs'}
+>>> del nide[Harsh]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Harsh' is not defined. Did you mean: 'hash'?
+>>> del nide['Harsh']
+>>> nide
+{'Navin': 'python', 'Kiran': 'java', 'Kanika': 'cs'}
+>>> prog = {'js':'Atom', 'cs':'VS', 'Python':['pycharm','sublime'],'java':{'JSE':'Netbeans','JEE':'Eclipse'}}
+>>> prog
+{'js': 'Atom', 'cs': 'VS', 'Python': ['pycharm', 'sublime'], 'java': {'JSE': 'Netbeans', 'JEE': 'Eclipse'}}
+>>> prog[''js]
+  File "<stdin>", line 1
+    prog[''js]
+         ^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> prog['js']
+'Atom'
+>>> prog['Python'][1]
+'sublime'
+>>> prog['python']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'python'
+>>> prog['Python']
+['pycharm', 'sublime']
+>>> prog['java']
+{'JSE': 'Netbeans', 'JEE': 'Eclipse'}
+>>> prog['java']['JEE']
+'Eclipse'
